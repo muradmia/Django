@@ -1,0 +1,86 @@
+
+body{
+    /* background-color: gray; */
+    /* background: linear-gradient(45deg,green,red); */
+    margin: auto;
+}
+.head{
+    color : green;
+    text-align: left;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 50px;
+    background: linear-gradient(45deg,green,red);
+}
+
+/* .box{
+    width: 300px;
+    height: 300px;
+    border: 1px solid gray;
+    padding-top: 10px;
+    margin-top : 100px;
+    box-shadow: 4px 4px 8px gray;
+} */
+
+/* .box2{
+    padding : 50;
+    background-color: green;
+    width: 50%;
+    margin : auto;
+} */
+.child{
+    width: 50%;
+    background-color:blue;
+    /* height: 100vh; */
+}
+.first{
+    /* display: inline; */
+    width : 200px;
+    height :200px;
+    background-color: blue;
+   float: left;
+}
+.second{
+    /* display: inline; */
+    width : 200px;
+    height :200px;
+    background-color: rebeccapurple;
+    float: left;
+}
+
+.box1{
+    width: 150px;
+    height: 100px;
+    color : rgb(182, 55, 55);
+    background-color: green;
+    position: fixed;
+    /* position : absolute; */
+}
+.box2{
+    width: 150px;
+    height: 100px;
+    color : rgb(194, 45, 45);
+    background-color: rgb(49, 135, 248);
+}
+.box3{
+    width: 150px;
+    height: 100px;
+    color : rgb(255, 28, 28);
+    background-color: rgb(233, 34, 150);
+}
+.green{
+    width: 450px;
+    background-color : green;
+    margin: 50px;
+    height:250px;
+    position : relative;
+}
+.red{
+    width: 120px;
+    height: 120px;
+    background-color : red;
+    border-radius : 60px;
+    position : absolute;
+    top : 32%;
+    left : 32%;
+}

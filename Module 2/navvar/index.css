@@ -1,0 +1,71 @@
+*{
+    margin : 0px;
+    padding : 0px;
+}
+
+.navvar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: aqua;
+    /* background: linear-gradient(#040641, #3F0753); */
+}
+
+.menu-container{
+    display: flex;
+    list-style: none;
+    gap : 20px;
+    color : rgb(93, 83, 83);
+}
+.logo{
+    width :70px;
+}
+.banner-container{
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    /* height: 100vh; */
+    margin : auto;
+    align-items: center;
+    text-align: center;
+   
+}
+.ban-img{
+    width : 100%;
+    text-align: right;
+    margin-left : 100px;
+}
+.nav-head{
+    color : aqua;
+    font-weight: bold;
+    font-size: 76px;
+    /* text-align: center;  */
+    /* padding : 15px; */
+    
+}
+.description{
+    font-size: 22px;
+    /* text-align: justify; */
+    padding : 15px;
+}
+button{
+    padding : 15px;
+    border: none;
+    color : white;
+}
+.app-button{
+    background-color: aqua;
+}
+.dc-button{
+    background-color:aqua;
+}
+.container{
+    width: 80%;
+    margin : auto;
+    text-align: center;
+    /* padding : 20px; */
+}
+.Service{
+    font-size: 56px;
+}
