@@ -58,11 +58,17 @@ function enter(e){
 }
 
 
-function clickhandle(e){
-    var input = document.getElementById("input").value;
-    console.log(input);
-}
+// function clickhandle(e){
+//     var input = document.getElementById("input").value;
+//     console.log(input);
+// }
 
+const clickhanle = () =>{
+    var p = document.createElement("p");
+    p.innerText = "Noton ami";
+    newdiv.appendChild(p);
+
+}
 
 
 
