@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>this is home page</h1>
+    <h1>Author : {{author}}</h1>
+    <h1>Age : {{age}}</h1>
+    <h1>{{lst}}</h1>
+
+
+    <!-- conditional statement -->
+    {% if age >= 20 %}
+    <h2>you will get lisence</h2>
+    {% elif age == 15 %}
+    <h2>i am here</h2>
+    {% else %}
+    <h2>you are a child</h2>
+    {% endif %}
+
+    {{ lst | join:" - " }}
+    {% comment %} <h1>{{ val | default: "nothing here" }}</h1> {% endcomment %}
+    <h1> {{ val | add:"5" }}</h1>
+    <h1>{{ course | dictsort:"name" }}</h1>
+    <h1>{{ course | last }}</h1>
+    <h1>{{ course | length }}</h1>
+    {% comment %} loop in django {% endcomment %}
+    {% for i in course %}
+    <h1>{{i.id}}</h1>
+    <h1>{{i.name}}</h1>
+    <h1>{{i.fee}}</h1>
+    {% endfor %}
+</body>
+</html>
