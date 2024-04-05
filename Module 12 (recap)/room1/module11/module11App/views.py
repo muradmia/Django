@@ -16,6 +16,18 @@ def form(request):
     else:
         return render(request, 'form.html')
 
-def django_forms(request):
-    form = LoginForm()
-    return render(request, 'django_forms.html', {'form':form})
+def student(request):
+    # if request.method == 'POST':
+        # print("Murad")
+        # form =LoginForm(request.POST)
+        # if form.is_valid():
+        #     print(form)
+        #     print("MUrad")
+        # return render(request, 'django_forms.html', {'form':form})
+    # else:
+    #     form = LoginForm()
+    # return render(request, 'django_forms.html', {'form':form})
+    form  = LoginForm(request.POST)
+    if form.is_valid():
+        print(form.cleaned_data)
+    return render(request, 'django_forms.html',{'form':form})

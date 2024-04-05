@@ -17,12 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from . import views
-from . forms import LoginForm
+# from . forms import LoginForm
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.app,name = 'app'),
     path('about/',views.about,name='about'),
     path('form/',views.form,name = 'form'),
-    path('django_forms/',views.django_forms,name='django_forms'),
+    path('django_forms/',views.student,name='django_forms'),
     
 ]
