@@ -22,6 +22,7 @@ urlpatterns = [
     path('',views.app,name = "app"),
     path('about/',views.about,name = "about"),
     path('forms/',views.forms,name = "forms"),
-    path('django_form/',views.django_forms,name = "django_forms")
+    path('django_form/',views.student_a,name = "django_form"),
+    # path('student/',views.student,name = "student"),
 
 ]
