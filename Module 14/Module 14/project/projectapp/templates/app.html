@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<h1>Hi i am murad</h1>
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Roll</th>
+        <th scope="col">F.name</th>
+        <th scope="col">M.name</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for i in user %}
+      <tr>
+        <th scope="row">{{i.name}}</th>
+        <td colspan="2">{{i.roll}}</td>
+        <td>{{i.mother}}</td>
+        <td>{{i.father}}</td>
+        <td><a href='{% url 'delete' i.roll %}' class="btn btn-danger" >Delete</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+
+{% endblock %}

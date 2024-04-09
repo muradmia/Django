@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>This is app page</h1>
+
+{% if data %}
+
+<table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">Roll</th>
+        <th scope="col">Name : </th>
+        <th scope="col">F.Nmae</th>
+        <th scope="col">Address : </th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for st in data %}
+      <tr>
+        <th scope="row">{{st.roll}}</th>
+        <td>Name : {{st.name}}</td>
+        <td>F Name : {{st.father_name}}</td>
+        <td>Address : {{st.address}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+{% else %}
+<h1>No data</h1>
+{% endif %}
+
+<!-- {{data}} -->
+{% endblock %}
