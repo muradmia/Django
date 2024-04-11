@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>this is app page</h1>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Name :</th>
+        <th scope="col">Roll :</th>
+        <th scope="col">Father Name :</th>
+        <th scope="col">Mother Name :</th>
+        <th scope="col">Address :</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for i in user %}
+      <tr>
+       
+        <th scope="row">{{i.roll}}</th>
+        <td colspan="2">{{i.name}}</td>
+        <td>{{i.FatherName}}</td>
+        <td>{{i.MotherName}}</td>
+        <td>{{i.Address}}</td>
+        <td><a href="{% url 'delete' i.roll %}" class = "btn-danger">delete</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+{% endblock %}
