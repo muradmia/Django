@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags%}
+{% block content %}
+<h1>This is categories page</h1>
+<form method="post">
+    {% csrf_token %}
+    {{category | crispy}}
+    <button class = "btn btn-danger" type="submit">Submit</button>
+</form>
+{% endblock %}
