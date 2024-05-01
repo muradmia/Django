@@ -18,5 +18,9 @@ from django.contrib import admin
 from django.urls import path,include
 from . import views
 urlpatterns = [
-    path('', views.app, name='app'),
+    # path('', views.app, name='app'),
+    path('signup/',views.signup, name='signup'),
+    path('profile/',views.profile, name='profile'),
+    path('userlogin/',views.userlogin, name='login'),
+    path('userlogout',views.userlogout, name='logout'),
 ]
